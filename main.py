@@ -57,4 +57,5 @@ for i in range(population):
     curr_uuid += 1
 
 df = pd.DataFrame(data, columns=features)
+pd.DataFrame(data).to_csv("data.csv")
 print(df)
