@@ -26,7 +26,6 @@ localities = [587112, 587201, 587101, 587102, 587103, 587311, 587116, 587114, 58
 conditions = ["Diabetes", "Cancer", "Kidney Ailments", "Pulmonary", "Heart"]
 yes_no_questions = ["Y", "N"]
 
-curr_uuid = 0
 for i in range(population):
 
     person = np.array([])
@@ -54,7 +53,6 @@ for i in range(population):
     person = np.append(person, symptoms)
 
     data = np.append(data, [person], axis=0)
-    curr_uuid += 1
 
 df = pd.DataFrame(data, columns=features)
 pd.DataFrame(data, columns=features).to_csv("data.csv", index=False)
