@@ -1,6 +1,6 @@
-,0,1,2,3,4,5,6,7,8,9
-0,0,F,53,architect,587114,0.8,none,y,n,y
-1,1,M,7,doctor,587311,1.0,arthritis,y,y,n
-2,4,F,81,not employed,587115,1.2,blindness,y,y,n
-3,2,M,72,lawyer,587311,1.0,hypertension,y,y,y
-4,3,M,27,self-employed,587102,1.0,dementia,y,y,y
+UUID,Gender,Age,Profession,Locality/Pin Code,Rate of infection in that zone,Pre-existing medical conditions,Travel history in the last 1 month,Coming in contact with someone who has been diagnosed with Covid 19,Do you have any kind of Covid 19 symptoms
+3.0,M,29,Security,587101,1.2,Cancer,N,N,Y
+0.0,M,32,Blue Collar worker,587102,0.9,Pulmonary,N,N,Y
+4.0,F,5,Bank,587201,1.0,Heart,N,Y,Y
+1.0,F,43,Blue Collar worker,587112,1.0,Heart,Y,Y,N
+2.0,M,23,Health Care,587103,0.8,Diabetes,N,Y,N

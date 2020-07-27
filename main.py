@@ -16,27 +16,28 @@ import pandas as pd
 
 population = 5
 data = np.empty((0,10), str)
-features = ['uuid', 'gender', 'age', 'profession', 'locality', 'infection_rate', 'condition', 'travel', 'contact', 'symptoms']
+features = ['UUID', 'Gender', 'Age', 'Profession', 'Locality/Pin Code', 'Rate of infection in that zone', 'Pre-existing medical conditions', 'Travel history in the last 1 month', 'Coming in contact with someone who has been diagnosed with Covid 19', 'Do you have any kind of Covid 19 symptoms']
+# data = np.asarray(features)
 
 uuids = random.sample(range(0, population), population)
 genders = ["M", "F"]
-ages = np.arange(0, 100, 1).tolist()
-professions = ["not employed", "doctor", "lawyer", "architect", "construction worker", "engineer", "self-employed", "consultant", "dentist", "psychologist"]
-localities = { 587112:0.8, 587201:0.9, 587101:1.1, 587102:1.0, 587103:1.2, 587311:0.9, 587116:1.1, 587114:0.8, 587115:1.0, 587113:1.2}
-conditions = ["none", "diabetes", "cancer", "hypertension", "arthritis", "asthma", "blindness", "dementia", "chronic bronchitis", "heart disease"]
-yes_no_questions = ["y", "n"]
+ages = np.arange(1, 71, 1).tolist()
+professions = ["Health Care", "Security", "Police", "Blue Collar worker", "Work from Home", "Public Policy", "Bank"]
+localities = [587112, 587201, 587101, 587102, 587103, 587311, 587116, 587114, 587115, 587113]
+conditions = ["Diabetes", "Cancer", "Kidney Ailments", "Pulmonary", "Heart"]
+yes_no_questions = ["Y", "N"]
 
 curr_uuid = 0
 for i in range(population):
 
     person = np.array([])
 
-    uuid = str(uuids[curr_uuid])
+    uuid = uuids[curr_uuid]
     gender = random.choice(genders)
-    age = str(random.choice(ages))
+    age = random.choice(ages)
     profession = random.choice(professions)
-    locality = str(random.choice(list(localities.keys())))
-    infection_rate = str(random.choice(list(localities.values())))
+    locality = random.choice(localities)
+    infection_rate = round(random.uniform(0.8, 1.2), 1)
     condition = random.choice(conditions)
     travel = random.choice(yes_no_questions)
     contact = random.choice(yes_no_questions)
@@ -57,5 +58,5 @@ for i in range(population):
     curr_uuid += 1
 
 df = pd.DataFrame(data, columns=features)
-pd.DataFrame(data).to_csv("data.csv")
-print(df)
+pd.DataFrame(data, columns=features).to_csv("data.csv", index=False)
+print(df.to_string(index=False))
