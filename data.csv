@@ -1,6 +1,6 @@
 UUID,Gender,Age,Profession,Locality/Pin Code,Rate of infection in that zone,Pre-existing medical conditions,Travel history in the last 1 month,Coming in contact with someone who has been diagnosed with Covid 19,Do you have any kind of Covid 19 symptoms
-3.0,M,29,Security,587101,1.2,Cancer,N,N,Y
-0.0,M,32,Blue Collar worker,587102,0.9,Pulmonary,N,N,Y
-4.0,F,5,Bank,587201,1.0,Heart,N,Y,Y
-1.0,F,43,Blue Collar worker,587112,1.0,Heart,Y,Y,N
-2.0,M,23,Health Care,587103,0.8,Diabetes,N,Y,N
+7823-8143-9111-3790,M,52,Police,587101,0.8,Heart,Y,N,N
+7359-6441-2417-3126,M,67,Bank,587116,1.0,Diabetes,Y,N,Y
+6040-2769-7580-7111,F,27,Bank,587101,1.1,Heart,Y,N,Y
+7519-4230-1553-4953,M,41,Police,587114,0.9,Kidney Ailments,N,N,N
+5882-4590-3228-4892,F,54,Security,587102,1.0,Diabetes,N,Y,N

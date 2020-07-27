@@ -17,7 +17,6 @@ import pandas as pd
 population = 5
 data = np.empty((0,10), str)
 features = ['UUID', 'Gender', 'Age', 'Profession', 'Locality/Pin Code', 'Rate of infection in that zone', 'Pre-existing medical conditions', 'Travel history in the last 1 month', 'Coming in contact with someone who has been diagnosed with Covid 19', 'Do you have any kind of Covid 19 symptoms']
-# data = np.asarray(features)
 
 uuids = random.sample(range(0, population), population)
 genders = ["M", "F"]
@@ -32,7 +31,7 @@ for i in range(population):
 
     person = np.array([])
 
-    uuid = uuids[curr_uuid]
+    uuid = str(np.random.randint(1000, 9999)) + "-" + str(np.random.randint(1000, 9999)) + "-" + str(np.random.randint(1000, 9999)) + "-" + str(np.random.randint(1000, 9999))
     gender = random.choice(genders)
     age = random.choice(ages)
     profession = random.choice(professions)
