@@ -1,6 +1,101 @@
 UUID,Gender,Age,Profession,Locality/Pin Code,Rate of infection in that zone,Pre-existing medical conditions,Travel history in the last 1 month,Coming in contact with someone who has been diagnosed with Covid 19,Do you have any kind of Covid 19 symptoms
-2216-2985-4594-6327,F,15,Bank,590003,0.9,Diabetes,N,N,Y
-9495-8710-2909-1153,M,35,Blue Collar worker,577005,1.0,Kidney Ailments,Y,Y,N
-8460-5830-8802-9843,M,46,Police,590015,1.1,Pulmonary,N,Y,Y
-2864-8429-1592-6423,F,54,Work from Home,580008,0.9,Heart,N,N,N
-7275-8759-9846-7239,F,16,Health Care,563115,0.9,Heart,Y,Y,Y
+1881-1446-7981-4064,M,12,Police,586101,0.9,Kidney Ailments,Y,Y,N
+4385-1687-8926-8232,F,23,Police,577232,0.9,None,N,Y,Y
+3000-9805-2982-1450,F,61,Police,590001,0.9,Cancer,Y,N,Y
+9751-2446-8643-3937,M,60,Security,572158,1.1,Diabetes,Y,Y,N
+2178-3136-1077-5415,M,6,Work from Home,587101,1.1,Pulmonary,N,Y,Y
+9579-6068-1691-4153,F,54,Security,590006,1.1,Diabetes,Y,Y,N
+2972-8326-1511-2637,M,31,Public Policy,561207,1.2,Cancer,Y,Y,Y
+6806-6074-8290-8765,F,28,Work from Home,571247,1.0,Pulmonary,Y,Y,N
+1922-2885-6776-8893,M,58,Public Policy,576271,1.2,Cancer,N,N,Y
+3530-8742-2982-9061,F,1,Blue Collar worker,583102,1.2,Diabetes,N,Y,N
+3557-7141-7577-5641,F,35,Work from Home,574211,1.0,Cancer,Y,N,N
+3320-4048-9787-1122,F,11,Police,590002,1.1,Kidney Ailments,Y,Y,Y
+9166-7658-9439-8549,M,35,Police,560004,0.9,Cancer,N,N,Y
+3425-7154-8306-9788,M,43,Health Care,574125,0.8,Cancer,N,N,N
+2628-9930-5202-5571,F,40,Security,583141,0.8,None,N,Y,N
+9488-7995-5094-5916,M,28,Security,585403,1.2,Diabetes,Y,N,N
+2633-8896-8845-2598,F,32,Blue Collar worker,576271,0.8,None,Y,N,N
+2320-3594-6304-2443,M,38,Security,590005,0.9,Heart,N,Y,N
+7616-7206-9151-3049,F,36,Blue Collar worker,590003,0.9,Heart,Y,Y,Y
+6701-6106-9286-1026,M,1,Work from Home,560002,1.2,Heart,Y,Y,Y
+8618-5984-5439-3930,M,57,Public Policy,587311,1.0,None,Y,N,Y
+5752-7392-4381-4050,F,10,Police,586101,0.9,Heart,Y,N,Y
+6696-9941-2567-1249,M,18,Blue Collar worker,585275,1.0,Pulmonary,N,N,N
+8303-6718-7270-9421,M,1,Security,572113,0.9,Cancer,Y,N,Y
+8408-6967-7439-7201,M,36,Work from Home,576136,1.1,Diabetes,Y,Y,Y
+3494-7258-2013-6378,F,31,Public Policy,581431,0.9,Kidney Ailments,Y,N,N
+9231-4009-6621-7458,F,36,Health Care,583101,0.8,Kidney Ailments,Y,N,N
+9700-1909-4754-3152,M,34,Work from Home,581427,1.0,Pulmonary,Y,Y,Y
+4360-1436-3459-3801,F,24,Work from Home,585153,1.1,None,Y,Y,N
+8810-6728-5271-8795,M,5,Bank,560083,1.0,None,Y,N,N
+4846-1349-9441-3479,M,4,Health Care,590003,1.2,Pulmonary,Y,N,Y
+9512-8185-4627-8852,M,26,Bank,574251,1.0,Heart,N,N,N
+9324-6072-3623-4310,F,41,Bank,581127,0.9,Pulmonary,Y,N,Y
+2536-8934-9479-3847,F,42,Public Policy,591139,1.0,Pulmonary,N,Y,Y
+4024-9389-3137-2977,F,29,Police,581422,1.2,Heart,N,Y,Y
+1782-6310-9804-7380,F,16,Police,581314,1.2,None,Y,Y,Y
+8460-8222-3142-6099,F,13,Work from Home,581127,0.8,Pulmonary,Y,Y,N
+9547-4142-7680-3393,F,61,Police,562109,0.9,Diabetes,N,N,N
+4441-9506-3881-3157,F,64,Police,577551,0.9,None,Y,Y,Y
+2342-8327-7108-1267,M,37,Police,583250,1.2,Kidney Ailments,N,N,Y
+5057-4484-5166-5816,F,5,Blue Collar worker,580008,1.0,None,Y,N,N
+2295-2026-6244-1767,M,52,Health Care,584154,1.1,None,N,N,Y
+1854-9452-1519-9646,M,25,Health Care,571255,1.0,Kidney Ailments,N,Y,N
+2122-5367-3567-7645,M,2,Security,581414,1.1,Kidney Ailments,N,Y,N
+3504-1251-4462-6187,M,8,Public Policy,586140,1.0,Heart,N,Y,Y
+6660-6664-5075-9967,M,36,Blue Collar worker,590013,1.0,None,Y,N,Y
+2920-2034-4736-6187,M,19,Public Policy,571109,1.2,Diabetes,Y,N,N
+8938-8184-7442-2704,M,5,Blue Collar worker,581369,0.8,None,Y,N,N
+8135-2532-1324-1666,F,67,Police,573162,0.9,Heart,N,Y,Y
+8768-1197-3954-6469,F,68,Public Policy,581127,1.2,Pulmonary,Y,N,Y
+1161-9157-9004-4455,M,62,Work from Home,585401,0.8,Heart,Y,N,N
+6282-9563-6249-1962,M,20,Work from Home,560002,1.2,Heart,N,Y,Y
+1271-7381-9640-7974,F,52,Work from Home,586204,0.9,Heart,Y,N,Y
+3792-1059-4198-1570,F,63,Security,583101,1.2,Diabetes,N,N,Y
+7722-4061-5695-2052,F,22,Bank,581414,0.9,Kidney Ailments,N,Y,N
+7514-1435-9105-9461,M,43,Work from Home,590002,0.8,Cancer,Y,Y,N
+2989-9885-7646-6707,M,44,Public Policy,563116,1.0,None,Y,N,Y
+2638-6893-2721-7528,M,17,Bank,576214,0.9,Kidney Ailments,Y,Y,N
+6459-6030-7433-8851,F,64,Work from Home,585287,0.9,None,N,N,Y
+6529-6445-3380-8646,M,45,Blue Collar worker,571104,1.1,Diabetes,Y,Y,N
+1744-2291-5682-7756,F,33,Health Care,590005,1.0,Diabetes,Y,N,Y
+8409-8963-4218-8354,F,34,Work from Home,586101,0.9,Pulmonary,N,N,Y
+1811-2628-7836-7431,F,22,Bank,590006,0.8,Diabetes,N,Y,N
+9678-8358-2223-1819,M,32,Work from Home,583238,0.8,Pulmonary,N,N,N
+3590-9118-2421-6257,M,2,Public Policy,581322,0.8,Diabetes,N,N,N
+7659-2243-3552-8459,M,12,Public Policy,574102,1.2,Cancer,N,Y,Y
+4109-9658-3621-6669,F,2,Public Policy,582225,1.1,Diabetes,Y,N,Y
+6610-8694-2181-2323,F,40,Public Policy,560001,1.2,Kidney Ailments,N,Y,Y
+6599-5772-3854-3620,M,36,Public Policy,574172,1.1,Heart,Y,N,N
+8998-2924-3569-9940,F,36,Blue Collar worker,590009,1.0,None,Y,N,N
+9810-5144-2038-2958,F,10,Work from Home,585401,1.0,Cancer,Y,N,Y
+1620-2592-7801-6550,M,21,Security,572113,0.8,Cancer,Y,N,N
+8994-8826-2871-3487,F,12,Bank,591132,0.8,Diabetes,N,N,Y
+2611-6708-7694-9552,F,20,Public Policy,586101,1.2,Pulmonary,N,N,N
+7066-2782-4286-2617,F,5,Police,586105,1.0,Pulmonary,Y,Y,Y
+2974-5069-5818-9186,M,32,Health Care,573201,1.0,Heart,N,N,Y
+4153-3362-8903-6337,F,57,Work from Home,585287,0.9,Heart,N,Y,N
+3553-3378-2402-4394,M,8,Blue Collar worker,586101,0.9,None,Y,N,N
+9158-6298-5417-6096,M,66,Work from Home,577115,1.0,Heart,Y,Y,N
+4824-6076-5290-3480,M,14,Blue Collar worker,590006,1.1,Pulmonary,N,N,N
+3833-1907-3104-6308,F,11,Bank,563116,0.9,Kidney Ailments,N,Y,N
+9128-6578-2714-3823,F,27,Bank,572115,0.9,Cancer,N,N,Y
+5118-2655-4861-8448,M,59,Health Care,574272,1.0,Pulmonary,N,N,Y
+6132-5626-8079-7157,M,13,Work from Home,560068,1.1,Heart,Y,N,Y
+8692-1130-9374-2709,M,37,Security,563123,1.0,None,Y,Y,Y
+2142-6758-7118-8189,F,6,Work from Home,560053,1.2,None,Y,Y,N
+9115-6026-4771-7000,M,48,Health Care,571484,0.9,Pulmonary,N,N,N
+1409-5650-6411-9887,F,55,Blue Collar worker,577301,1.0,Diabetes,Y,N,Y
+1677-3854-1342-6399,F,30,Security,571265,0.8,Cancer,N,Y,N
+5811-8142-9615-5033,F,42,Police,581106,1.1,Cancer,N,Y,N
+4845-7602-4321-1767,M,61,Work from Home,583101,0.9,Diabetes,N,Y,N
+2450-6272-1926-6431,M,39,Security,583101,0.9,Kidney Ailments,N,Y,Y
+7285-2718-3928-2536,M,44,Blue Collar worker,583101,1.1,None,N,N,Y
+2642-6266-8613-3172,F,22,Police,583101,1.0,Cancer,N,N,Y
+1963-7853-3648-4875,M,64,Blue Collar worker,570020,0.9,Pulmonary,Y,Y,N
+3225-8743-7196-8421,F,29,Health Care,585265,1.2,Heart,Y,N,Y
+5935-5666-6626-3605,M,20,Bank,585402,0.8,Diabetes,N,Y,N
+6266-4146-3704-7650,M,67,Bank,563159,0.9,Heart,Y,Y,N
+3865-9314-2201-6223,M,3,Security,571451,1.1,Cancer,N,N,N
+1118-4764-9365-4047,M,63,Security,585275,0.9,Kidney Ailments,Y,Y,Y
