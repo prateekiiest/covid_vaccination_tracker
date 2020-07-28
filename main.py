@@ -20,8 +20,21 @@ from bs4 import BeautifulSoup
 population = 1000
 data = np.empty((0,10), str)
 
+def agedistro(turn,end,size):
+    pass
+    totarea = turn + (end-turn)/2  # e.g. 50 + (90-50)/2
+    areauptoturn = turn             # say 50
+    size1= int(size*areauptoturn/totarea)
+    size2= size- size1 
+    s1 = np.random.uniform(low=0,high=turn,size= size1)  # (low=0.0, high=1.0, size=None)
+    s2 = np.random.triangular(left=turn,mode=turn,right=end,size=size2) #(left, mode, right, size=None)
+    # mode : scalar-  the value where the peak of the distribution occurs. 
+    #The value should fulfill the condition left <= mode <= right.
+    s3= np.concatenate((s1,s2)) # don't use add , it will add the numbers piecewise
+    return s3
+
 genders = ["M", "F"]
-ages = np.arange(1, 71, 1).tolist()
+ages = agedistro(turn=50,end=90,size=100).astype(int)
 professions = ["Health Care", "Security", "Police", "Blue Collar worker", "Work from Home", "Public Policy", "Bank"]
 conditions = ["None", "Diabetes", "Cancer", "Kidney Ailments", "Pulmonary", "Heart"]
 yes_no_questions = ["Y", "N"]
@@ -48,18 +61,38 @@ def generate_pincodes():
                     pincodes.append(int(value))
     return pincodes
 
+def generate_occupation(age):
+    occupation_probs = {16:0.0, 22:0.4, 51:0.9, 56:0.8, 61:0.5, 66:0.1, 71:0.05, 81:0.01, 91:0}
+    has_occupation_prob = -1
+    for key in sorted(occupation_probs.keys()):
+        if age < key:
+            has_occupation_prob = occupation_probs[key]
+            break
+    if np.random.choice(yes_no_questions, p=[has_occupation_prob, 1-has_occupation_prob]) == "Y":
+        return random.choice(professions)
+    else:
+        return "None"
+
+def generate_contact_prob(infection_rate, travel, symptoms):
+    infections_probs = {0.8:0.01, 0.9:0.02, 1.0:0.03, 1.1:0.04, 1.2:0.05}
+    travel_probs = {"N":0.0, "Y":0.05}
+    symptoms_probs = {"N":0.0, "Y":0.3}
+    total_prob = infections_probs[infection_rate] + travel_probs[travel] + symptoms_probs[symptoms]
+    return total_prob
+
 # Generate random values for each of the features for a given person
 def generate_random_features():
     uuid = str(np.random.randint(1000, 9999)) + "-" + str(np.random.randint(1000, 9999)) + "-" + str(np.random.randint(1000, 9999)) + "-" + str(np.random.randint(1000, 9999))
     gender = random.choice(genders)
     age = random.choice(ages)
-    profession = random.choice(professions)
+    profession = generate_occupation(age)
     pincode = random.choice(pincodes)
     infection_rate = round(random.uniform(0.8, 1.2), 1)
     condition = random.choice(conditions)
     travel = random.choice(yes_no_questions)
-    contact = random.choice(yes_no_questions)
     symptoms = random.choice(yes_no_questions)
+    get_contact_prob = generate_contact_prob(infection_rate, travel, symptoms)
+    contact = np.random.choice(yes_no_questions, p=[get_contact_prob, 1-get_contact_prob])
     return (uuid, gender, age, profession, pincode, infection_rate, condition, travel, contact, symptoms)
 
 def create_person(uuid, gender, age, profession, pincode, infection_rate, condition, travel, contact, symptoms):
