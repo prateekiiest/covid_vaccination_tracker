@@ -46,7 +46,7 @@ uuids = random.sample(range(0, population), population)
 genders = ["M", "F"]
 ages = np.arange(1, 71, 1).tolist()
 professions = ["Health Care", "Security", "Police", "Blue Collar worker", "Work from Home", "Public Policy", "Bank"]
-conditions = ["Diabetes", "Cancer", "Kidney Ailments", "Pulmonary", "Heart"]
+conditions = ["None", "Diabetes", "Cancer", "Kidney Ailments", "Pulmonary", "Heart"]
 yes_no_questions = ["Y", "N"]
 
 for i in range(population):
