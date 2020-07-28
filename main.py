@@ -17,7 +17,7 @@ from bs4 import BeautifulSoup
 
 
 # Set population, initialize dataset
-population = 100
+population = 1000
 data = np.empty((0,10), str)
 
 genders = ["M", "F"]
@@ -25,9 +25,11 @@ ages = np.arange(1, 71, 1).tolist()
 professions = ["Health Care", "Security", "Police", "Blue Collar worker", "Work from Home", "Public Policy", "Bank"]
 conditions = ["None", "Diabetes", "Cancer", "Kidney Ailments", "Pulmonary", "Heart"]
 yes_no_questions = ["Y", "N"]
+pincodes = []
 
 # Scrape site for KARNATAKA pincodes
 def generate_pincodes():
+    global pincodes
     def is_int(s):
         try: 
             int(s)
@@ -52,7 +54,7 @@ def generate_random_features():
     gender = random.choice(genders)
     age = random.choice(ages)
     profession = random.choice(professions)
-    pincode = random.choice(generate_pincodes())
+    pincode = random.choice(pincodes)
     infection_rate = round(random.uniform(0.8, 1.2), 1)
     condition = random.choice(conditions)
     travel = random.choice(yes_no_questions)
@@ -77,6 +79,7 @@ def create_person(uuid, gender, age, profession, pincode, infection_rate, condit
 
 # Build dataset
 def build_dataset():
+    generate_pincodes()
     for _ in range(population):
         # Will be manipulating global dataset
         global data
