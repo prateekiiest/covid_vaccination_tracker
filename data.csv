@@ -1,6 +1,6 @@
 UUID,Gender,Age,Profession,Locality/Pin Code,Rate of infection in that zone,Pre-existing medical conditions,Travel history in the last 1 month,Coming in contact with someone who has been diagnosed with Covid 19,Do you have any kind of Covid 19 symptoms
-4145-7816-9175-3382,F,44,Blue Collar worker,587102,1.1,Pulmonary,N,Y,Y
-4810-2354-1418-4753,F,47,Security,587103,1.0,Kidney Ailments,N,Y,Y
-3540-1062-2236-2447,F,39,Security,587101,1.0,Pulmonary,Y,Y,N
-7542-4276-6234-5315,F,62,Public Policy,587103,1.0,Pulmonary,N,N,N
-8021-9517-5901-9837,F,33,Work from Home,587115,0.8,Heart,Y,N,Y
+1295-8979-5761-9572,F,61,Security,582136,0.9,Heart,N,Y,N
+8680-7968-4218-8004,M,6,Blue Collar worker,583237,1.2,Diabetes,N,Y,N
+8251-7326-2814-2839,M,60,Blue Collar worker,581427,1.2,Heart,N,N,Y
+3086-9503-8856-6320,F,12,Blue Collar worker,583102,1.0,Diabetes,N,Y,Y
+5638-9784-2520-5071,M,65,Work from Home,591270,1.2,Cancer,N,Y,N

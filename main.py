@@ -13,6 +13,30 @@
 import numpy as np
 import random
 import pandas as pd
+import requests
+from bs4 import BeautifulSoup
+
+
+# Get pincodes
+pincodes = []
+
+def is_int(s):
+    try: 
+        int(s)
+        return True
+    except ValueError:
+        return False
+
+url = requests.get("https://chennaiiq.com/india/pincode/index.asp?id=16&state_name=Karnataka&page=B").text
+soup = BeautifulSoup(url, 'lxml')
+trs = soup.find_all('tr', class_="tab")
+
+for tr in trs:
+    for td in tr.find_all('td'):
+        value = str(td).replace("<td>", "").replace("</td>", "")
+        if is_int(value):
+            if int(value) > 100000:
+                pincodes.append(int(value))
 
 population = 5
 data = np.empty((0,10), str)
@@ -22,7 +46,6 @@ uuids = random.sample(range(0, population), population)
 genders = ["M", "F"]
 ages = np.arange(1, 71, 1).tolist()
 professions = ["Health Care", "Security", "Police", "Blue Collar worker", "Work from Home", "Public Policy", "Bank"]
-localities = [587112, 587201, 587101, 587102, 587103, 587311, 587116, 587114, 587115, 587113]
 conditions = ["Diabetes", "Cancer", "Kidney Ailments", "Pulmonary", "Heart"]
 yes_no_questions = ["Y", "N"]
 
@@ -34,7 +57,7 @@ for i in range(population):
     gender = random.choice(genders)
     age = random.choice(ages)
     profession = random.choice(professions)
-    locality = random.choice(localities)
+    pincode = random.choice(pincodes)
     infection_rate = round(random.uniform(0.8, 1.2), 1)
     condition = random.choice(conditions)
     travel = random.choice(yes_no_questions)
@@ -45,7 +68,7 @@ for i in range(population):
     person = np.append(person, gender)
     person = np.append(person, age)
     person = np.append(person, profession)
-    person = np.append(person, locality)
+    person = np.append(person, pincode)
     person = np.append(person, infection_rate)
     person = np.append(person, condition)
     person = np.append(person, travel)
