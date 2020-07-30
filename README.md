@@ -16,3 +16,27 @@ As a proof of concept of our solution, we have generated a sample data set of 10
 First, we scraped a webpage containing Karnataka's various pincodes/locatlities and assigned them to newly generated vaccine candidates. Next, we assigned each candidate an age based on the normal age distribution for a given population. Each candidate was then assigned an occupation from a set of common occupations within the state of Karantaka, or "None" in some cases ("None" was assigned with a certain probability based on the given candidate's age). Finally, we assigned random candidates a value of "Y" or "N" for recent travel, and then used this response as well as the rate of infection in their pincode to generate a probability for if that person has come into contact with someone who had the virus within the last 2 weeks.
 
 Combining these data points with a handful of others for each individual, we garnered sufficient data to feed into an ML model interpret this data and determine who was at the highest mortality risk of COVID-19.
+
+
+-----------------------------------
+
+## Identifying patients with high risk
+
+
+**Some results for identifying at risk patients w.r.t decision tree classifiers**
+
+Achieving a accuracy of 0.89 from the mock data. Assuming when we have real population data through the proposed framework, we will have even better accuracy, the pipeline being the same
+
+![](assets/firstPlot.png)
+
+![](assets/secondPlot.png)
+
+-----------------------------------------------
+
+## CORONA-MODMAX Vaccine Distribution via Modularity Maximization
+
+![](assets/slide2.png)
+
+![](assets/slide1.png)
+
+
