@@ -1,4 +1,4 @@
-# Hackathon 2020
+# Microsoft Hackathon 2020
 
 ## Introduction
 For our project, we have decided to design a system for distributing a potential COVID-19 vaccine within the Indian state of Karnataka. Since the vaccine cannot be delivered to everyone in need instantly, it is important to develop a priority system such that those who are most in need of the vaccine can get attended to first.
